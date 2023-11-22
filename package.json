@@ -1,6 +1,6 @@
 {
-  "name": "2048v2_2024",
-  "version": "0.1.0",
+  "name": "2048_v2",
+  "version": "2.0.0_dev_v1",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
