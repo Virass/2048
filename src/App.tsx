@@ -1,10 +1,20 @@
+import styled from 'styled-components';
+import { colors } from './globalSettings';
+import { Preloader } from './components/UI/Preloader/Preloader';
 
-function App() {
+export const App = () => {
   return (
-    <div>
+    <AppContainer>
       2048
-    </div>
+      <Preloader />
+    </AppContainer>
   );
 }
 
-export default App;
+const AppContainer = styled.div`
+  width: 100vw;
+  height: 100vh;
+  background: ${colors.bg};
+  font-family: "Pacifico";
+  color: ${colors.text};
+`;
