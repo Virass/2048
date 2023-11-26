@@ -1,10 +1,22 @@
+import styled from 'styled-components';
+import { colors } from './globalSettings';
+import { AppLayouts } from 'Layouts/AppLayouts';
 
-function App() {
+export const App = () => {
   return (
-    <div>
-      2048
-    </div>
+    <AppContainer>
+      <AppLayouts />
+    </AppContainer>
   );
 }
 
-export default App;
+const AppContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: ${colors.bg};
+  font-family: "Oswald", sans-serif;
+  color: ${colors.text};
+`;
