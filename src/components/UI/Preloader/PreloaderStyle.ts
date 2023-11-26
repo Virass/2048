@@ -29,14 +29,14 @@ export const PreloaderWrapper = styled.div<PreloaderWrapperType>`
 
 export const PreloaderContainer = styled.div<PreloaderContainerType>`
 ${({ speed, size }) => {
-  const border = size / 50;
-  const beforePosition = size / 30;
-  const afterPosition = size / 10;
-  const defaultSpeed = speed * 2;
-  const beforeSpeed = speed * 3;
-  const afterSpeed = speed * 1.5;
+    const border = size / 50;
+    const beforePosition = size / 30;
+    const afterPosition = size / 10;
+    const defaultSpeed = speed * 2;
+    const beforeSpeed = speed * 3;
+    const afterSpeed = speed * 1.5;
 
-  return css`
+    return css`
     display: block;
     position: relative;
     width: ${size}px;
@@ -75,4 +75,4 @@ ${({ speed, size }) => {
       animation: ${spin} ${afterSpeed}s linear infinite;
     }
   `
-}}`;
+  }}`;

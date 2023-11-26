@@ -1,7 +1,7 @@
 import { PreloaderContainer, PreloaderWrapper } from './PreloaderStyle';
 
 export const Preloader = () => {
-  const speed = 0.8;
+  const speed = 0.5;
   const size = 200;
 
   return (

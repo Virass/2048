@@ -1,20 +1,22 @@
 import styled from 'styled-components';
 import { colors } from './globalSettings';
-import { Preloader } from './components/UI/Preloader/Preloader';
+import { AppLayouts } from 'Layouts/AppLayouts';
 
 export const App = () => {
   return (
     <AppContainer>
-      2048
-      <Preloader />
+      <AppLayouts />
     </AppContainer>
   );
 }
 
 const AppContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100vw;
   height: 100vh;
   background: ${colors.bg};
-  font-family: "Pacifico";
+  font-family: "Oswald", sans-serif;
   color: ${colors.text};
 `;
